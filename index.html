@@ -61,7 +61,7 @@
             }
             header {
                 position: absolute;
-                top:800%;
+                top:500%;
                 left: -50%;
                 width: 200%;
                 -webkit-transition: all 1s ease .1s;
@@ -74,6 +74,11 @@
                 -ms-transform: translate(-0%,-50%) scale(0.25);
                 -o-transform: translate(-0%,-50%) scale(0.25);
                 transform: translate(-0%,-50%) scale(0.25);
+            }
+            @media (min-width: 768px) {
+                header {
+                    top:800%;
+                }
             }
             div {
                 text-align: center;
@@ -122,8 +127,12 @@
               animation: bg 1024ms linear both;
             }
             @-webkit-keyframes bg {
-                from {background-color: #eee}
-                to {background-color: #1abc9c}
+                from {
+                    background-color: #eee
+                }
+                to {
+                    background-color: #1abc9c
+                }
             }
 
             @-webkit-keyframes fadeUp {
